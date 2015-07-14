@@ -30,12 +30,14 @@ public class MainActivity extends Activity {
     public void btnPressed(View view)
     {
         express += view.getTag().toString();
+
         expArea.setText(express);
     }
     public void backSpace(View view)
     {
         if (!express.equals(""))
             express = express.substring(0, express.length() - 2);
+        expArea.setText(express);
     }
     public void computAction(View view)
     {
